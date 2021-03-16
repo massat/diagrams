@@ -3,6 +3,7 @@ FROM python:latest
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     graphviz \
+    fonts-noto-cjk \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
